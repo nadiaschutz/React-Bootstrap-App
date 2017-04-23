@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Contract from './Contract';
+import Fourofour from './Fourofour';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Contract />, div);
+  ReactDOM.render(<Fourofour />, div);
 });
