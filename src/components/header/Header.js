@@ -59,7 +59,7 @@ class Header extends Component {
             </ul>
             <form onSubmit={this.handleSearch} className="form-inline mt-2 mt-md-0">
               <input  value={this.state.value} onChange={this.handleChange}  className="form-control mr-sm-2" type="text" placeholder="Search" />
-              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <button className="btn btn-outline-wuno my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
         </nav>

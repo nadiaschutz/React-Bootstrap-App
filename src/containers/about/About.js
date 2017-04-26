@@ -4,9 +4,8 @@ class About extends Component {
   render(){
     return (
         <div className="container">
-
           <div className="row">
-              <div className="col-sm-12 col-md-4 col-lg-4">
+              <div className="box col-sm-12 col-md-4 col-lg-4">
                   <div className="card">
                     <div className="card-block">
                       <h4 className="card-title">Card title</h4>
@@ -22,7 +21,7 @@ class About extends Component {
                     </div>
                   </div>
               </div>
-              <div className="col-sm-12 col-md-8 col-lg-8">
+              <div className="box col-sm-12 col-md-8 col-lg-8">
                   <div className="card">
                     <div className="card-block">
                       <h4 className="card-title">Card title</h4>
@@ -42,7 +41,7 @@ class About extends Component {
           </div>
 
           <div className="row">
-            <div className="col-sm-12 col-md-6 col-lg-3">
+            <div className="box col-sm-12 col-md-6 col-lg-3">
                 <div className="card">
                   <div className="card-block">
                     <h4 className="card-title">Card title</h4>
@@ -59,7 +58,7 @@ class About extends Component {
                   </div>
                 </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3">
+            <div className="box col-sm-12 col-md-6 col-lg-3">
                 <div className="card">
                   <div className="card-block">
                     <h4 className="card-title">Card title</h4>
@@ -79,7 +78,7 @@ class About extends Component {
 
             <div className="clearfix hidden-sm-up"></div>
 
-            <div className="col-sm-12 col-md-6 col-lg-3">
+            <div className="box col-sm-12 col-md-6 col-lg-3">
                 <div className="card">
                   <div className="card-block">
                     <h4 className="card-title">Card title</h4>
@@ -96,7 +95,7 @@ class About extends Component {
                   </div>
                 </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3">
+            <div className="box col-sm-12 col-md-6 col-lg-3">
                 <div className="card">
                   <div className="card-block">
                     <h4 className="card-title">Card title</h4>

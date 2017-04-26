@@ -1,3 +1,32 @@
 nav {
     position: fixed;
 }
+
+.btn-outline-wuno {
+    color: #fff !important;
+    background-image: none;
+    background-color: transparent;
+    border-color: #e9593d !important;
+}
+
+.btn-outline-wuno:hover {
+    color: #fff;
+    background-color: #e9593d !important;
+    border-color: #e9593d !important;
+}
+
+.form-control:focus {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #e9593d;
+    border: solid 2px #e9593d;
+    outline: 0;
+}
+
+.form-control:hover {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #e9593d;
+    border: solid 2px #e9593d;
+    outline: 0;
+}
