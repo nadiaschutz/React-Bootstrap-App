@@ -1,0 +1,10 @@
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container p.text-muted {
+    text-align: center;
+}
