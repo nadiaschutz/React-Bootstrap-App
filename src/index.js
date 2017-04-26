@@ -4,7 +4,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 ReactDOM.render(
-    <div className="site-wrapper">
+    <div className="container-fluid">
         <Header />
         <Footer />
     </div>

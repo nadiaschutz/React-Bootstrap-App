@@ -4,8 +4,12 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className="Footer">
-          <h2>HEY THIS IS THE FOOTER COMPONENT</h2>
+      <div>
+        <footer className="footer">
+            <div className="container">
+                <span className="text-muted">Place sticky footer content here.</span>
+            </div>
+        </footer>
       </div>
     );
   }
