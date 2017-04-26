@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Fourofour from './Fourofour';
+import NoMatch from './NoMatch';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Fourofour />, div);
+  ReactDOM.render(<NoMatch />, div);
 });
