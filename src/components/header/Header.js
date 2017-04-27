@@ -74,7 +74,6 @@ class Header extends Component {
               </Switch>
             </div>
         </BrowserRouter>
-
     );
   }
 }
