@@ -12,6 +12,7 @@ import Services from './../../containers/services/Services';
 import About from './../../containers/about/About';
 import Portfolio from './../../containers/portfolio/Portfolio';
 import Contact from './../../containers/contact/Contact';
+import Authentication from './../authentication/Authentication';
 
 class Header extends Component {
     constructor(props) {
@@ -70,6 +71,7 @@ class Header extends Component {
               <Route path="/about" component={About} />
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
+              <Route path="/authentication" component={Authentication} />
               <Route component={NoMatch} />
               </Switch>
             </div>
