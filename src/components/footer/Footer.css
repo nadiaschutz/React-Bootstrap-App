@@ -6,3 +6,15 @@ footer {
 .footer .container p.text-muted {
     text-align: center;
 }
+
+.wuno-color {
+    color: #e9593d;
+}
+
+.footer .container p.wuno-color {
+    text-align: center;
+}
+
+.footer .container a.wuno-color:hover {
+    color: #e9593d;
+}

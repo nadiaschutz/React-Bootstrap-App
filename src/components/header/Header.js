@@ -3,9 +3,10 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  Link
+  NavLink
 } from 'react-router-dom';
 import './Header.css';
+import logo from './../../logo.svg';
 import NoMatch from './../../containers/nomatch/NoMatch';
 import Home from './../../containers/home/Home';
 import Services from './../../containers/services/Services';
@@ -39,23 +40,23 @@ class Header extends Component {
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand" href="#">Logo Here</a>
+          <a className="navbar-brand" href="https://wuno.com"><img src={logo} className="App-logo" alt="logo" /></a>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                  <Link to="/" className="nav-link">Home</Link>
+                  <NavLink exact={true} to="/" className="nav-link">Home</NavLink>
               </li>
               <li className="nav-item">
-                  <Link to="/services" className="nav-link">Services</Link>
+                  <NavLink to="/services" className="nav-link">Services</NavLink>
               </li>
               <li className="nav-item">
-                  <Link to="/about" className="nav-link">About</Link>
+                  <NavLink to="/about" className="nav-link">About</NavLink>
               </li>
               <li className="nav-item">
-                  <Link to="/portfolio" className="nav-link">Portfolio</Link>
+                  <NavLink to="/portfolio" className="nav-link">Portfolio</NavLink>
               </li>
               <li className="nav-item">
-                  <Link to="/contact" className="nav-link">Contact</Link>
+                  <NavLink to="/contact" className="nav-link">Contact</NavLink>
               </li>
             </ul>
             <form onSubmit={this.handleSearch} className="form-inline mt-2 mt-md-0">
@@ -64,7 +65,6 @@ class Header extends Component {
             </form>
           </div>
         </nav>
-
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/services" component={Services} />

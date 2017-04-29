@@ -4,6 +4,20 @@ html, body {
   font-family: sans-serif;
 }
 
+.container a {
+    color: #e9593d;
+}
+
+.container a:hover {
+    color: #e9593d;
+    text-decoration: underline !important;
+}
+
+.container a:visited {
+    color: #e9593d;
+    text-decoration: underline !important;
+}
+
 .container-fluid {
     padding: 0px !important;
 }
@@ -14,9 +28,4 @@ html, body {
 
 .box {
     padding: 30px
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

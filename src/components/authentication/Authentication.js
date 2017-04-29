@@ -101,7 +101,6 @@ class Authentication extends Component {
                     <button onClick={this.login} className="btn btn-lg btn-primary btn-block" type="submit">Login</button>
                     <button onClick={this.register} className="btn btn-lg btn-primary btn-block" type="submit">Register</button>
                     <button onClick={this.logout} id="logout" className="hide btn btn-lg btn-primary btn-block" type="submit">Logout</button>
-
                 </div>
             </div>
        );

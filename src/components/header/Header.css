@@ -2,6 +2,16 @@ nav {
     position: fixed;
 }
 
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .btn-outline-wuno {
     color: #fff !important;
     background-image: none;
@@ -29,4 +39,17 @@ nav {
     border-color: #e9593d;
     border: solid 2px #e9593d;
     outline: 0;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
+    color: #e9593d !important;
+}
+
+.navbar-inverse .navbar-nav .active>.nav-link, .navbar-inverse .navbar-nav .nav-link.active {
+    color: #e9593d !important;
+    text-decoration: underline !important;
 }
