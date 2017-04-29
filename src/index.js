@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import App from './App';
 
 ReactDOM.render(
-    <div className="container-fluid">
-        <Header />
-        <Footer />
-    </div>
-,
+        <App />,
   document.getElementById('root')
 );
