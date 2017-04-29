@@ -43,8 +43,8 @@ class Authentication extends Component {
         const auth = firebase.auth();
         const promise = auth.signInWithEmailAndPassword(email, password);
 
-        promise.then(user => {
-            var message = "You are logged in as " + user.email;
+        promise.then(res => {
+            var message = "You are logged in as " + res.email;
             this.setState({message: message});
             var lout = document.getElementById('logout');
             lout.classList.remove('hide');
@@ -59,11 +59,34 @@ class Authentication extends Component {
         const promise = firebase.auth().signOut();
 
         promise
-        .then(user => {
+        .then(res => {
             var message = "You are logged out from your account";
             this.setState({message: message});
             var lout = document.getElementById('logout');
             lout.classList.add('hide');
+        })
+        .catch(e => {
+            var message = e.message;
+            this.setState({message: message});
+        });
+    }
+
+    googleLogin() {
+        console.log('Signing with google active');
+        var provider = new firebase.auth.GoogleAuthProvider();
+        var promise = firebase.auth().signInWithPopup(provider);
+
+        promise
+        .then( res => {
+            var user = res.user;
+            firebase.database().ref('users/'+user.uid).set({
+                email: user.email,
+                name: user.displayName
+            });
+            var message = "You are logged in as " + user.email;
+            this.setState({message: message});
+            var lout = document.getElementById('logout');
+            lout.classList.remove('hide');
         })
         .catch(e => {
             var message = e.message;
@@ -80,6 +103,7 @@ class Authentication extends Component {
 
         this.login = this.login.bind(this);
         this.register = this.register.bind(this);
+        this.googleLogin = this.googleLogin.bind(this);
         this.logout = this.logout.bind(this);
      }
 
@@ -100,6 +124,7 @@ class Authentication extends Component {
                     <p>{this.state.message}</p>
                     <button onClick={this.login} className="btn btn-lg btn-primary btn-block" type="submit">Login</button>
                     <button onClick={this.register} className="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+                    <button onClick={this.googleLogin} className="btn btn-lg btn-danger btn-block" type="submit">Google</button>
                     <button onClick={this.logout} id="logout" className="hide btn btn-lg btn-primary btn-block" type="submit">Logout</button>
                 </div>
             </div>
