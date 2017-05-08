@@ -15,6 +15,7 @@ import Portfolio from './../../containers/portfolio/Portfolio';
 import Contact from './../../containers/contact/Contact';
 import Authentication from './../authentication/Authentication';
 import Reddit from './../reddit/Reddit';
+import Replicon from './../replicon/Replicon';
 
 class Header extends Component {
     constructor(props) {
@@ -74,6 +75,7 @@ class Header extends Component {
               <Route path="/contact" component={Contact} />
               <Route path="/authentication" component={Authentication} />
               <Route path="/reddit" component={Reddit} />
+              <Route path="/replicon" component={Replicon} />
               <Route component={NoMatch} />
               </Switch>
             </div>
